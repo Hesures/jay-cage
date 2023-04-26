@@ -1,0 +1,170 @@
+    /* PALETTE: 
+    #166086 dark cyan-blue 
+    #155B7E dark cyan-blue 2
+    #77AEDB light cyan blue
+    #7E3728 medium dark red
+    #000000 black
+    #948666 shade of yellow
+    #EDD6A2 light shade yellow
+    */
+
+html {
+    font-size: 12px;
+}
+  
+.project-tile, h3 {
+    box-shadow: 0 20px 40px rgba(0,0,0,0.19), 0 10px 10px rgba(0,0,0,0.23);
+}
+
+h3 {
+    font-size: 2rem;
+    padding: 2rem;
+    text-align: center;
+    background: #EDD6A2;
+}
+
+h1 {
+    font-family: 'Gabriela', times new roman;
+    font-size: 10rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3.5rem;
+    font-family: source serif pro, times new roman;
+    font-style: italic;
+    text-align: center;
+}
+
+body {
+    font-family: 'Source Serif Pro', serif;
+    margin: 0 auto;
+}
+
+/* ////////////////////////// NAV */
+
+#navbar {
+    position: fixed;
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    height: 65px;
+    background: #000000;
+    color: #77AEDB;
+}
+
+li {
+    margin-left: 40px;  
+}
+
+nav ul li {
+    display: inline;
+    font-size: 2.3rem;
+    padding: 1rem;
+    }
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+li:hover {
+    color: #EDD6A2;
+}
+
+/* /////////////////////// WELCOME */
+
+#welcome-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg,#7E3728,#948666);
+    margin: 0 auto;
+}
+
+#welcome-logo {
+    margin: 10% 5%;
+    width: 30%;
+    height: auto;
+}
+
+img {
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+} 
+
+/* //////////////////// PROJECTS */
+
+#projects {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: beige;
+    width: 100%;
+    height: auto;
+    gap: 12rem;
+    background: linear-gradient(180deg,#948666,#948666);
+}
+
+.projects-title {
+    width: 100%;
+    height: auto;
+}
+
+.project-tile {
+    width: 500px;
+    height: 500px;
+    background: #EDD6A2;
+    border-radius: 50%;
+}
+
+.img-tile {
+    max-width: 60%;
+    max-height: auto;
+    margin: 15% auto;
+    display: flex;
+}
+
+.project-tile:hover, h3:hover  {
+    background: #77AEDB;
+}
+
+
+/* ///////////////////////// FOOTER */
+
+#footer-format {
+    background: linear-gradient(180deg,#948666,#77AEDB);
+    width: 100%;
+    height: 30vh;
+    padding-top: 100px;
+    padding-bottom: 0px;
+}
+
+/* /////////////////////////// MEDIA */
+
+@media (max-width:420px) {
+    #welcome-logo {
+        margin: 20% 5%;
+        width: 80%;
+        height: auto;
+    }
+    nav ul li {
+    font-size: 1.9rem;
+    padding: 0.5rem;
+    }
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .project-tile {
+        width: 280px;
+        height: 280px;
+    }
+}

@@ -1,0 +1,95 @@
+/* PALETTE
+#166086 dark cyan-blue 
+#155B7E dark cyan-blue 2
+#77AEDB light cyan blue
+#7E3728 medium dark red
+#000000 black
+#948666 shade of yellow
+#EDD6A2 light shade yellow/*
+
+/* Info: 1rem === 12px, 6rem === 72px, */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 12px;
+  }
+  
+  body {
+    font-family: source serif pro, times new roman;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0;
+    background: linear-gradient(45deg,#000000,#7E3728);
+    }
+  
+  #main {
+    margin: 25px 10px 30px 10px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    background: linear-gradient(180deg,#948666,#EDD6A2);
+    box-shadow: 0 10px 20px 
+    rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  
+  #title {
+    margin: 0;
+    font-size: 6rem;
+    text-align: center;
+    line-height: 1;
+    color: #000000; 
+    font-family: katibeh, times new roman;
+  }
+  
+  #img-div {
+    background: #EDD6A2;
+    padding: 10px;
+    margin: 0;
+    border-radius: 5px;
+  }
+  
+  #image {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    border: 0.2rem;
+  }
+  
+  #img-caption {
+    margin: 10px 0 10px 0;
+    font-size: 15px;
+  }
+  
+  #tribute-info {
+    max-width: 520px;
+    color: #000000;
+    text-align: left;
+    line-height: 1.5;
+    margin: 0 auto 50px auto;
+  }
+  
+  #tribute-link {
+    color: #000000;
+  }
+  
+  #tribute-link:hover, a:hover {
+    background-color: #7E3728;
+    color: #FFFFFF;
+  }
+  
+  h3 {
+    text-align: center;
+    margin: 50px;
+  }
+  
+  @media (max-width:460px) {#img-caption {font-size:1.2rem;}
+  }
+  
+  blockquote {
+    margin: 15% auto;
+    font-style: italic;
+  }

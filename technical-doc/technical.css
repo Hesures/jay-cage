@@ -1,0 +1,87 @@
+
+
+/***************************************** TECHNICAL DOC **************************************************************/
+
+html {
+    font-size: 12px;
+}
+  
+body {
+    background: #000000;
+    font-family: source serif pro, times new roman;
+    font-size: 1.5rem;
+}
+  
+#menu-tittle {
+    margin: 0 10%;
+}
+  
+#main-doc {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+  
+#main-doc header {
+    font-size: 2.7rem;
+}
+  
+#navbar {
+    background: linear-gradient(180deg,#7E3728,#948666);
+    font-size: 1.5rem;
+    line-height: 4rem;
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    border-right: solid;
+}
+  
+#header-img {
+    width: 50%;
+    height: auto;
+    margin: 0 25%;
+}
+  
+tittle {
+    font-size: 5rem;
+    font-family: gabriola, times new roman;
+}
+  
+#navbar li {
+    color: white;
+    padding: 0.3rem;
+    border: solid 1px #000000;
+    background: #155B7E;
+}
+  
+.main-section {
+    text-align: left;
+    max-width: 75%;
+    height: auto;
+    padding: 1.2rem;
+    margin: 0 0 0 25%;
+    background: linear-gradient(180deg,#948666,#EDD6A2,#EDD6A2,#EDD6A2,#EDD6A2);
+}
+  
+.nonestyle, a {
+    text-decoration: none;
+    list-style-type: none;
+    color: inherit;
+}
+  
+  /* /////////////////// MEDIA */
+  
+@media (max-width:420px) {
+    tittle {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+    #navbar {
+        font-size: 0.9rem;
+        line-height: 1rem;
+    }
+    li {
+        margin: 0 auto 10%;
+    }
+}

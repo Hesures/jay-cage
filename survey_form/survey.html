@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Oldstring - Survey Form</title>
+
+    <!-- STYLES 
+    font-family: 'Gabriela', serif;
+    font-family: 'Source Serif Pro', serif;
+    -->
+    <link rel="stylesheet" href="./survey.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/icon" href="../images/jay-icon.png">
+    
+</head>
+<body>
+
+    <!-- HEADER -->
+    <h1 id="title">Jay Oldstring Guitar Class Survey Form</h1>
+    <p id="description">We adapt to your level and schedules in our online lessons</p>
+    <img src="../images/jay_oldstring.png">
+
+    <!-- FORM -->
+    <form id="survey-form">
+        
+        <!-- NAME -->
+        <div id="form-group">
+            <label for="name" id="name-label">Name</label>
+            <input class="input-format" id="name" type="name" name="name" placeholder="Enter your name" required/>
+        </div>
+        
+        <!-- EMAIL -->
+        <div id="form-group">
+            <label for="email" id="email-label">Email</label>
+            <input class="input-format" id="email" type="email" name="email" required placeholder="Enter your email"/>
+        </div>
+      
+        <!-- AGE -->
+        <div id="form-group">
+            <label for="number" id="number-label">Age<span class="clue">(optional)</span></label>
+            <input class="input-format" id="number" type="number" name="age" min="8" max="99" placeholder="Age"/>
+        </div>
+
+        <!-- LEVEL -->
+        <div id="form-group">
+            <p>What do you consider to be your level as a guitar player?</p>
+            <select id="dropdown" name="duration">
+                <option value="novice">Novice</option>
+                <option value="competent">Competent</option>
+                <option value="proficient">Proficient</option>
+                <option value="expert">Expert</option>
+            </select>
+        </div>
+      
+        <!-- DURATION -->
+        <div id="form-group">
+            <p>What duration do you prefer for your guitar lessons?<br> <span class="clue">(less time will not necessarily mean cheaper prices)</span></p>
+            <div class="class-duration">
+                <label>
+                    <input type="radio" value="30 minutes" name="one-answer" checked/> 30 minutes
+                </label>
+                <label>
+                    <input type="radio" name="one-answer" value="45 minutes"/> 45 minutes
+                </label>
+                <label>
+                    <input type="radio" name="one-answer" value="60 minutes"/> 60 minutes
+                </label>
+            </div>
+        </div>
+        
+        <!-- DAY OF THE WEEK -->
+        <div id="form-group">
+            <p>What day of the week would you prefer to have the lessons?<span class="clue"><br>(Check all that apply)</span></p>
+            <div class="day-preference">
+                <div>
+                    <label>
+                        <input name="prefer" type="checkbox" value="Modays"/>Mondays
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input name="prefer" type="checkbox" value="Tuesdays"/>Tuesdays
+                    </label>  
+                </div>
+                <div>
+                    <label>
+                        <input name="prefer" type="checkbox" value="Wednesdays"/>Wednesdays
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input name="prefer" type="checkbox" value="Thursdays"/>Thursdays
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input name="prefer" type="checkbox" value="Fridays"/>Fridays
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input name="prefer" type="checkbox" value="Saturdays"/>Saturdays
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input name="prefer" type="checkbox" value="Sundays"/>Sundays
+                    </label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="img-oldstring"></div>
+        
+        <div id="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea class="input-format" id="comments" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+      
+        <div id="button-container">
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+
+    </form>
+
+    <a href="https://codepen.io/Hesur/pen/abyRamK">Clic aqui</a>
+    
+</body>
+</html>
